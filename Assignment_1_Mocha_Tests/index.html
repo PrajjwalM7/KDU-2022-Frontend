@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    let assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+  <script>
+    function pow( x, n ) {
+
+      if (isNaN(x) || isNaN(n)) {
+        return "Operation Not Permitted !";
+      }
+
+      if (Math.round(n) != n) {
+          return "Only Integer power allowed."
+      }
+
+      if(n < 0) {
+          return "Only positive powers allowed."
+      }
+
+      if (x == 0 && n == 0) {
+          return "Indeterminate Expression."
+      }
+
+      let result = 1;
+
+      for (let i = 0; i < n; i++) {
+          result *= x;
+      }
+
+      return result;
+    }
+  </script>
+
+  <!-- the script with tests (describe, it...) -->
+  <script src="mocha_test.js"></script>
+
+  <div id="mocha"></div>
+
+  <!-- run tests! -->
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>
