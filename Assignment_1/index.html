@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <title>Twitter. It's what's happening / Twitter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .home {
+                display: flex;
+            }
+            .home__left {
+                width: 54%;
+                background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+                height: 95vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .home__right {
+                width: 46%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding-left: 2em;
+            }
+            .home__poster {
+                width: 35%;
+            }
+            .home__heading {
+                font-size: 4em;
+                font-weight: 900;
+                margin-top: -7vh;
+            }
+            .home__heading_small {
+                font-size: 2em;
+                margin-top: -40px;
+            }
+            .home__heading_extra-small {
+                font-size: 1em;
+                margin-top: -40px;
+            }
+            .home__sign-up {
+                width: 40%;
+                margin-top: -10vh;
+            }
+            .home__sign-up-btn {
+                background-color: white;
+                border: 1px solid grey;
+                border-radius: 20px;
+                padding: 10px 20px;
+                width: 100%;
+                font-weight: bold;
+                margin: 6px 0;
+                font-size: 15px;
+            }
+            .home__sign-up-or-text {
+                text-align: center;
+            }
+            .home__sign-up_blue {
+                background-color: rgb(79, 179, 245);
+                color: white;
+            }
+            .home__terms-and-conditions {
+                font-size: 10px;
+            }
+            .home__sign-in-btn {
+                background-color: white;
+                border: 1px solid grey;
+                border-radius: 20px;
+                padding: 10px 20px;
+                width: 100%;
+                font-weight: bold;
+                margin-top: 25px;
+                font-size: 15px;
+            }
+            .home__sign-in {
+                width: 40%;
+            }
+            .home__sign-up-link {
+                text-decoration: none;
+                color: white;
+            }
+            .home__sign-in_blue-text {
+                color: rgb(79, 179, 245);
+            }
+            .fa-google {
+                background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+            }
+            .footer {
+                width: 100%;
+                height: 5vh;
+                text-align: center;
+                line-height: 5vh;
+            }
+            .footer__item {
+                text-decoration: none;
+                white-space: nowrap;
+                margin-left: 4px;
+                font-size: 14px;
+                color: grey;
+            }
+            @media screen and (max-width: 1650px) {
+                .footer__item {
+                    font-size: 12px;
+                }
+            }
+            @media screen and (max-width: 1500px) {
+                .home__sign-up {
+                    width: 50%;
+                }
+                .home__sign-in {
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width: 1250px) {
+                .footer__item {
+                    font-size: 10px;
+                }
+            }
+            @media screen and (max-width: 1100px) {
+                .home__sign-up {
+                    width: 55%;
+                }
+                .home__sign-in {
+                    width: 55%;
+                }
+                .home__heading {
+                    font-size: 3em;
+                }
+                .home__heading_small {
+                    font-size: 1.2em;
+                }
+                .home__heading_extra-small {
+                    font-size: 1em;
+                }
+            }
+            
+            @media screen and (max-width: 1000px) {
+                .home {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .home__left {
+                    width: 100%;
+                    height: 40vh;
+                }
+                .home__right {
+                    width: 100%;
+                    height: 80vh;
+                    padding-left: 0;
+                }
+                .home__right > * {
+                    margin-left: 10vw;
+                }
+                .home__sign-up {
+                    margin-top: -2vh;
+                }
+                .home__heading {
+                    margin-top: 3vh;
+                    font-size: 4em;
+                }
+                .home__heading_small {
+                    font-size: 1.6em;
+                    margin-top: 2vh;
+                }
+                .home__heading_extra-small {
+                    font-size: 1em;
+                }
+            }
+            
+            @media screen and (max-width: 780px) {
+                .home__right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .home__heading {
+                    margin-top: 3vh;
+                    font-size: 4em;
+                }
+                .home__heading_small {
+                    font-size: 1.6em;
+                    margin-top: 8vh;
+                }
+                .home__heading_extra-small {
+                    font-size: 1em;
+                    margin-top: 4vh;
+                }
+                .home__sign-up {
+                    margin-top: 4vh;
+                }
+            } 
+            @media screen and (max-width: 550px) {
+                .home__heading {
+                    margin-top: 3vh;
+                    font-size: 3em;
+                }
+                .home__heading_small {
+                    font-size: 1.6em;
+                    margin-top: 8vh;
+                }
+                .home__heading_extra-small {
+                    font-size: 1em;
+                    margin-top: 4vh;
+                }
+                .home__sign-up {
+                    margin-top: 4vh;
+                }
+                .home__sign-up {
+                    width: 80%;
+                }
+                .home__sign-in {
+                    width: 80%;
+                }
+            }
+            @media screen and (max-width: 400px) {
+                .home__heading {
+                    margin-top: 2vh;
+                    font-size: 2.3em;
+                }
+                .home__heading_small {
+                    font-size: 1.3em;
+                    margin-top: 6vh;
+                }
+                .home__heading_extra-small {
+                    font-size: 1em;
+                    margin-top: 2vh;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="home">
+            <div class="home__left">
+                <img class="home__poster" src="twitter-512.png" alt="">
+            </div>
+            <div class="home__right">
+                <div class="home__logo">
+                    <img src="logo.png" height="70px" alt="">
+                </div>
+                <p class="home__heading">Happening now</p>
+                <p class="home__heading home__heading_small">Join Twitter today.</p>
+                <div class="home__sign-up">
+                    <button class="home__sign-up-btn home__sign-up-google"><i class="fab fa-google"></i>  Sign up with Google</button>
+                    <button class="home__sign-up-btn home__sign-up-apple"><i class="fab fa-apple"></i>  Sign up with Apple</button>
+                    <p class="home__sign-up-or-text">or</p>
+                    <button class="home__sign-up-btn home__sign-up-phone home__sign-up_blue"><a class="home__sign-up-link" href="form.html">Sign up with phone or email</a></button>
+                    <p class="home__terms-and-conditions">By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
+                </div>
+                <div class="home__sign-in">
+                    <p class="home__heading home__heading_extra-small">Already have an account?</p>
+                    <button class="home__sign-in-btn home__sign-in_blue-text">Sign in</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="" class="footer__item">About</a>
+            <a href="" class="footer__item">Help Center</a>
+            <a href="" class="footer__item">Terms of Service</a>
+            <a href="" class="footer__item">Privacy Policy</a>
+            <a href="" class="footer__item">Cookie Policy</a>
+            <a href="" class="footer__item">Accessibility</a>
+            <a href="" class="footer__item">Ads info</a>
+            <a href="" class="footer__item">Blog</a>
+            <a href="" class="footer__item">Status</a>
+            <a href="" class="footer__item">Careers</a>
+            <a href="" class="footer__item">Brand Resources</a>
+            <a href="" class="footer__item">Advertising</a>
+            <a href="" class="footer__item">Marketing</a>
+            <a href="" class="footer__item">Twitter for Business</a>
+            <a href="" class="footer__item">Developers</a>
+            <a href="" class="footer__item">Directory</a>
+            <a href="" class="footer__item">Settings</a>
+            <a href="" class="footer__item">© 2022 Twitter, Inc.</a> 
+        </div>
+    </body>
+</html>
