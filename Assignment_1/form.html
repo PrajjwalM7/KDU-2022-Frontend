@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Twitter - Login with Phone</title>
+        <style>
+            .container {
+                height: 100vh;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            form {
+            }
+            .form div {
+                margin-top: 0.5em;
+                margin-bottom: 1em; 
+            }
+            .heading {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            input {
+                margin: 0.5em 0;
+                /* margin-bottom: 0.5em; */
+                border: 1px solid grey;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 20px;
+                width: 100%;
+            }
+            .logo img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            button {
+                width: 100%;
+                margin-top: 1em;
+                padding: 10px 20px;
+                font-size:  20px;
+                border-radius: 20px;
+                background-color: rgb(21, 211, 245);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <div class="logo">
+                    <img src="logo.png" height="70px" alt="">
+                </div>
+                <div class="heading">Create your account.</div>
+                <div>
+                    <form action="">
+                        <input type="text" name="Name" id="name" placeholder="Name"><br>
+                        <input type="number" name="phone" id="phone" placeholder="Phone"><br>
+                        <input type="date" name="dob" id="dob" placeholder="Date of birth"><br>
+                        <input type="password" name="password" placeholder="Password"><br>
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
