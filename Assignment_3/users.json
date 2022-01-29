@@ -1,0 +1,32 @@
+{
+    "prajjwal7" : {
+        "name" : "Prajjwal Mishra",
+        "blueTick" : true,
+        "about" : "Kickdrum Intern",
+        "profilePic" : "https://i.pinimg.com/originals/e1/d4/a2/e1d4a22996ce2ca890b5ddc0dc665893.jpg"
+    },
+    "prashant13" : {
+        "name" : "Prashant Mishra",
+        "blueTick" : false,
+        "about" : "Apisero SDE",
+        "profilePic" : "https://i.pinimg.com/originals/e1/d4/a2/e1d4a22996ce2ca890b5ddc0dc665893.jpg"
+    },
+    "aadi13" : {
+        "name" : "Aaditya Tiwari",
+        "blueTick" : false,
+        "about" : "Class 12, ISC",
+        "profilePic" : "https://i.pinimg.com/originals/e1/d4/a2/e1d4a22996ce2ca890b5ddc0dc665893.jpg"
+    },
+    "smita13" : {
+        "name" : "Smita Mishra",
+        "blueTick" : true,
+        "about" : "Concentrix",
+        "profilePic" : "https://i.pinimg.com/originals/e1/d4/a2/e1d4a22996ce2ca890b5ddc0dc665893.jpg"
+    },
+    "aastha7" : {
+        "name" : "Aastha Tiwari",
+        "blueTick" : false,
+        "about" : "Class 12",
+        "profilePic" : "https://i.pinimg.com/originals/e1/d4/a2/e1d4a22996ce2ca890b5ddc0dc665893.jpg"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Tennis" : {
+        "imageURL" : "https://media.istockphoto.com/photos/tennis-rackets-and-balls-leaned-against-the-net-picture-id1171084311?k=20&m=1171084311&s=612x612&w=0&h=5gTGOsXlkZkSggxRnxbevqt80mKf12xT6GXUC6MN_Qc=",
+        "news" : "Australian Open to start next month."   
+    },
+    "Cricket" : {
+        "imageURL" : "https://media.istockphoto.com/photos/tennis-rackets-and-balls-leaned-against-the-net-picture-id1171084311?k=20&m=1171084311&s=612x612&w=0&h=5gTGOsXlkZkSggxRnxbevqt80mKf12xT6GXUC6MN_Qc=",
+        "news" : "2 new teams to be part of IPL 2022"   
+    },
+    "Politics" : {
+        "imageURL" : "https://media.istockphoto.com/photos/tennis-rackets-and-balls-leaned-against-the-net-picture-id1171084311?k=20&m=1171084311&s=612x612&w=0&h=5gTGOsXlkZkSggxRnxbevqt80mKf12xT6GXUC6MN_Qc=",
+        "news" : "UP eletions - A battle"   
+    }
+}
