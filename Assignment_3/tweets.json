@@ -1,0 +1,42 @@
+{
+    "tweet1" : {
+        "content" : "Hello World!",
+        "twitterID" :  "prajjwal7",
+        "stats" : {
+            "likes" : 100,
+            "tweets" : 12
+        } 
+    },
+    "tweet2" : {
+        "content" : "JavaScript is confusing",
+        "twitterID" :  "whoiskrishna",
+        "stats" : {
+            "likes" : 120,
+            "tweets" : 112
+        }  
+    },
+    "tweet3" : {
+        "content" : "Kickdrum Intern",
+        "twitterID" :  "prajjwal7",
+        "stats" : {
+            "likes" : 10,
+            "tweets" : 2
+        }   
+    },
+    "tweet4" : {
+        "content" : "CSK will will the next IPL easily",
+        "twitterID" :  "aabc17",
+        "stats" : {
+            "likes" : 1100,
+            "tweets" : 112
+        }   
+    },
+    "tweet5" : {
+        "content" : "Bangalore's climate is awesome",
+        "twitterID" :  "shantanu123",
+        "stats" : {
+            "likes" : 1002,
+            "tweets" : 129
+        }
+    }
+}

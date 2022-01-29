@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchStyles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Twitter</title>
+</head>
+<body>
+    <div class="searchTwitter">
+        <div class="searchTwitter__bar">
+            <input type="text" class="searchTwitter__input" id="searchInput" name="search" id="searchBox" placeholder="Search Twitter">
+            <i id="searchIcon" class="fas fa-search searchTwitter__icon"></i>
+            <i onclick="clearText()" id="clearSearch" class="fas fa-times-circle searchTwitter__close"></i>
+        </div>
+        <div class="searchTwitter__results">
+            <div class="searchTwitter__empty">
+                Try searching for people, topics or keywords
+            </div>
+            <div class="searchTwitter__topics"></div>
+            <div class="searchTwitter__tweets"></div>
+            <div class="searchTwitter__users"></div>
+        </div>
+    </div>
+
+    <p id="a"></p>
+
+    <script src="searchResults.js"></script>
+</body>
+</html>
